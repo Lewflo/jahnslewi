@@ -1,28 +1,29 @@
-# Jahns Lewi — Personal Portfolio
+# Jahns Lewi: Personal Portfolio
 
-Sebuah website portofolio modern, responsif, dan elegan dengan konsep **Clean Light / Minimalist**, dibangun menggunakan **React**, **Vite**, **Tailwind CSS v4**, dan **Lucide Icons**.
-
----
-
-## 🚀 Fitur Utama
-
-- **Clean & Minimalist Typography**: Desain terang, modern, dan rapi berbasis font *Plus Jakarta Sans*.
-- **Data Terpusat**: Semua konten (bio, statistik, pengalaman kerja, proyek, keahlian, dan kontak) dapat dengan mudah diubah melalui satu file: [`src/data/portfolioData.js`](src/data/portfolioData.js).
-- **Interactive Project Showcase**: Filter kategori proyek (All, Full Stack, Frontend, Backend, Mobile) dengan tautan demo dan repository GitHub.
-- **Career & Education Timeline**: Riwayat pengalaman kerja dan latar belakang pendidikan (Computer Science @ BINUS University).
-- **Skill Categorization**: Kategorisasi keahlian Frontend, Backend, dan Tools dalam kartu visual minimalis.
-- **Interactive Contact Section**: Formulir kirim pesan interaktif, fitur copy email ke clipboard, serta tautan profil media sosial.
-- **Mobile Responsive**: Tampilan optimal untuk perangkat desktop, tablet, dan smartphone.
+Website portofolio minimalis, berkinerja tinggi, dan responsif dengan konsep **Warm Minimalist**, dibangun menggunakan **React 19**, **Vite**, dan **Tailwind CSS v4** dengan standar ketat **antislop** (Dial: ENERGY 1 / RHYTHM 1 / MOTION 1).
 
 ---
 
-## 🛠️ Menjalankan Project
+## Fitur Utama
+
+- **Warm Minimalist Design**: Palet warna tenang (#FAF9F6 latar warm off-white, #1A1A1A teks charcoal) dengan kontras tinggi (>12:1) yang ramah mata.
+- **Bebas AI Slop**: Tanpa gradien ungu atau biru default, tanpa statistik fiktif, tanpa tombol mati, dan tanpa karakter em dash.
+- **Fokus Rekayasa Riil**: Berfokus pada pilar Network & System Administration, CI/CD & Automation, Cloud Engineering (AWS & Azure), serta DevOps & IaC.
+- **Interaksi Bermanfaat**: Fitur salin email satu klik ke clipboard dengan feedback visual langsung, tautan profil LinkedIn riil, dan komposer pesan email.
+- **Aksesibilitas & Responsif**: Navigasi keyboard penuh (:focus-visible ring eksplisit), menu mobile ramah sentuhan (target ketukan minimal 44px), dan navigasi modal yang dapat ditutup dengan tombol Escape.
+
+---
+
+## Menjalankan Project
 
 Buka terminal di folder project `C:\Users\jahns\Documents\code\jahnslewi`:
 
 ```bash
 # Menjalankan development server
 npm run dev
+
+# Menjalankan linter
+npm run lint
 
 # Menjalankan build production
 npm run build
@@ -33,38 +34,19 @@ npm run preview
 
 ---
 
-## 📁 Struktur Direktori
+## Struktur Direktori
 
 ```text
 jahnslewi/
-├── index.html                  # File HTML utama dengan metadata dan font
-├── package.json                # Skrip dan dependensi project
-├── vite.config.js              # Konfigurasi Vite & Tailwind CSS
-├── src/
-│   ├── main.jsx                # Entrypoint React
-│   ├── App.jsx                 # Komponen layout utama
-│   ├── index.css               # Import Tailwind CSS & styling global
-│   ├── data/
-│   │   └── portfolioData.js    # Data konten portofolio yang mudah diedit
-│   └── components/
-│       ├── Navbar.jsx          # Header navigasi & status ketersediaan
-│       ├── Hero.jsx            # Bagian perkenalan & statistik utama
-│       ├── About.jsx           # Profil, prinsip rekayasa, dan edukasi
-│       ├── Experience.jsx      # Riwayat pengalaman kerja & magang
-│       ├── Projects.jsx        # Daftar proyek & filter kategori
-│       ├── Skills.jsx          # Kategori keahlian & tools
-│       ├── Contact.jsx         # Formulir pesan & fitur salin email
-│       ├── Footer.jsx          # Footer & tombol kembali ke atas
-│       └── Icons.jsx           # Ikon SVG (GitHub, LinkedIn, Twitter)
+├── index.html         # HTML utama dengan metadata dan base style
+├── package.json       # Skrip dan dependensi project
+├── vite.config.js     # Konfigurasi Vite & Tailwind CSS v4
+├── DESIGN.md          # Panduan arahan desain dan dial antislop
+├── GEMINI.md          # Pointer konfigurasi antislop
+└── src/
+    ├── main.jsx       # Entrypoint React
+    ├── App.jsx        # Komponen utama portofolio
+    ├── Navbar.jsx     # Header navigasi responsif & aksesibel
+    ├── index.css      # Variabel warna warm minimalist & reset CSS
+    └── App.css        # Gaya tambahan jika diperlukan
 ```
-
----
-
-## ✏️ Cara Mengubah Konten Portofolio
-
-Cukup buka file [`src/data/portfolioData.js`](src/data/portfolioData.js) dan sesuaikan:
-- Nama, role, tagline, dan bio
-- Riwayat pengalaman kerja dan pendidikan
-- Daftar proyek, tautan GitHub, dan link live preview
-- Daftar skill dan tingkat kemahiran
-- Email dan tautan media sosial
