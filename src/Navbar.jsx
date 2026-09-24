@@ -33,7 +33,7 @@ export default function Navbar() {
             Jahns Lewi
           </span>
           <span className="text-xs text-[#4B5563] hidden sm:inline">
-            IT Infrastructure & DevOps
+            IT Infrastructure, DevOps, Network
           </span>
         </a>
 
