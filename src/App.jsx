@@ -32,8 +32,8 @@ export default function App() {
   const coreFocusAreas = [
     {
       title: "Linux System & Network Administration",
-      desc: "Hands-on experience configuring networks, administering Linux environments, managing operational security, and maintaining high system availability.",
-      tags: ["Linux", "Networking", "System Hardening", "Shell Scripting"],
+      desc: "Hands-on experience configuring networks, administering Linux Server environments, managing operational security, and maintaining high system availability.",
+      tags: ["Linux Server", "Networking", "System Hardening", "Shell Scripting"],
     },
     {
       title: "CI/CD, Containerization & Automation",
@@ -69,7 +69,7 @@ export default function App() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#4B5563] max-w-2xl leading-relaxed mb-8">
-              I am a 3rd-year undergraduate student at BINUS University with a strong foundational
+              Hi there, I'm Lewi. A 3rd-year undergraduate student at BINUS University with a strong foundational
               background in Network and System Administration, currently expanding deep into IT
               Infrastructure, Cloud Computing (AWS and Azure), and DevOps practices.
             </p>
